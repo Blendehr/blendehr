@@ -1,38 +1,61 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-
   "logo": {
-    "type": "small",
-    "source": "arch",    
+    "source": "~/.config/fastfetch/miku.txt",
     "padding": {
       "top": 1,
       "left": 2
     },
     "color": {
-      "1": "#D4A373", 
-      "2": "#E07A5F"
+      "1": "#39c5bb",
+      "2": "#39c5bb"
     }
   },
-
   "display": {
     "separator": "  ",
     "color": {
-        "keys": "#D4A373",
-        "title": "#E07A5F"
+      "keys": "#39c5bb",
+      "title": "#39c5bb"
     }
   },
-
   "modules": [
+    {
+      "type": "title",
+      "format": "{1}",
+      "key": " ",
+      "outputColor": "#ff77ff"
+    },
+    "break",
+    {
+      "type": "custom",
+      "key": "─────┤ System ├─────",
+      "keyColor": "#ff77ff",
+      "format": ""
+    },
     "os",
     "kernel",
     "uptime",
     "packages",
+    "break",
+    {
+      "type": "custom",
+      "key": "─────┤ Interface ├─────",
+      "keyColor": "#ff77ff",
+      "format": ""
+    },
     "shell",
     "wm",
+    "theme",
     "terminal",
+    "break",
+    {
+      "type": "custom",
+      "key": "─────┤ Hardware ├─────",
+      "keyColor": "#ff77ff",
+      "format": ""
+    },
     "cpu",
+    "gpu",
     "memory",
-    "display",
-    "battery"
+    "disk"
   ]
 }
